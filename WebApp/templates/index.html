@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premios Nobel</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Premios Nobel</h1>
+
+    <h2>Cantidad de premios Nobel por país</h2>
+    <p>(Pase el mouse por las barras para más información.)</p>
+    <!-- Gráfica de ganadores por país -->
+    <!-- Verificar ID en el documento de JavaScriot-->
+    <canvas id="nobelChart" width="400" height="150"></canvas>
+
+    <!-- Lista de premios Nobel aleatorios -->
+    <h2>Lista de 5 premios Nobel aleatorios:</h2>
+    <ul id="nobelList"></ul>
+
+    <h2>Número de categorías de premios Nobel ganados por país</h2>
+    <!-- Gráfica de categorías por país -->
+    <!-- Verificar ID en el documento de JavaScriot-->
+    <canvas id="stackedBarChart" width="400" height="150"></canvas>
+
+    <!-- Referencia al archivo JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
